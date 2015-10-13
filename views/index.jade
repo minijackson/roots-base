@@ -1,6 +1,48 @@
 extends layout
 
 block content
-  h3 Welcome to roots!
-  :markdown
-    Find tutorials and documentation at http://roots.cx : )
+  nav
+    ul
+      li
+        a(href="#skills") Technical skills
+        ul
+          li
+            a(href="#languages") Programming Languages
+          li
+            a(href="#domains") Programming Languages
+      li
+        a(href="#projects") Projects
+      li
+        a(href="#education") Education
+      li
+        a(href="#other") Miscellaneous
+
+  div.content
+    section
+      h2#skills Technical skills
+      ul
+        li
+          h3#languages Programming Languages
+          ul
+            li C++
+            li C
+            li R
+            li Python
+            li Bash / Sh / Zsh
+            li HTML5
+            li CSS3
+            li Javascript
+            li Node.js
+            li Ecmascript 6
+            li Java
+            li Cortex M4 Assembly / x86 Assembly
+
+    section
+      h2#projects Projects
+      p Hello, World!
+    section
+      h2#education Welcome to roots! 3
+      p Hello, World!
+    section
+      h2#other Welcome to roots! 4
+      p Hello, World!

@@ -1,17 +1,34 @@
 doctype html
-html
 
-  head
-    meta(charset='utf8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge, chrome=1')
-    meta(name='description', content='description of your site')
-    meta(name='author', content= "author of the site")
-    //- uncomment if your site is responsive!
-    //- meta(name="viewport" content="width=device-width, initial-scale=1")
-    title= _path
-    != css()
+meta(charset='utf-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge')
+meta(name='description', content='Portfolio of Minijackson')
+meta(name='author', content= "Minijackson")
+meta(name="viewport" content="width=device-width, initial-scale=1")
+style.
+  body { opacity: 0; }
+noscript
+  style.
+    body { opacity: 1}
+title= _path
+!= css()
 
-  body
-    block content
+block header
+  header
+    h1 Minijackson's portfolio
+    div.social
+      ul
+        li
+          a(href="https://github.com/minijackson" target="_blank")
+            span.website-icon
+              include ../assets/img/logos/github.svg
+            | Minijackson
+        li
+          a(href="https://twitter.com/smoothyshadow" target="_blank")
+            span.website-icon
+              include ../assets/img/logos/twitter.svg
+            | @smoothyshadow
 
-    != js()
+block content
+
+!= js()

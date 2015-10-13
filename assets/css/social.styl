@@ -1,0 +1,45 @@
+header .social
+	font-size 1.3em
+	margin 4em 2em 2.3em 2em
+	padding-bottom .7em
+	border-bottom 2px solid black
+
+header .social ul
+	list-style-type none
+
+header .social ul li
+	display inline-block
+	margin-right 1em
+
+header .social ul li:first-of-type
+	margin-left 1em
+
+header .social ul li:last-of-type
+	margin-right 0
+
+header .social ul li a
+	transition color .3s
+
+header .social ul li a span.website-icon svg path
+	transition fill .3s
+
+header .social ul li a span.website-icon svg
+	height 1em
+	width auto
+	transition transform .3s
+
+header .social ul li a[href^="https://github.com"]:hover,
+header .social ul li a[href^="http://github.com"]:hover
+	color #4078C0
+
+header .social ul li a[href^="https://github.com"]:hover span.website-icon svg path,
+header .social ul li a[href^="http://github.com"]:hover span.website-icon svg path
+	fill #4078C0
+
+header .social ul li a[href^="https://twitter.com"]:hover,
+header .social ul li a[href^="http://twitter.com"]:hover
+	color #55ACEE
+
+header .social ul li a[href^="https://twitter.com"]:hover span.website-icon svg path,
+header .social ul li a[href^="http://twitter.com"]:hover span.website-icon svg path
+	fill #55ACEE
